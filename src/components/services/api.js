@@ -9,6 +9,9 @@ const callToApi=(searchName)=>{
                 name: item.name,
                 img : item.image,
                 species: item.especies,
+                status: item.status,
+                planet: item.origin.name,
+                episodes: item.episode.length,
             };
 
 
