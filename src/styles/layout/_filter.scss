@@ -1,0 +1,31 @@
+.main {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+.main_section {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #148f7a;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.section_filter_name {
+  display: flex;
+  flex-direction: column;
+}
+.section_filter_species {
+  margin-bottom: 10px;
+}
+.filter_label {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #24db1f;
+  padding-right: 10px;
+}
+.filter_input {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+.filter_select {
+  width: 103px;
+}

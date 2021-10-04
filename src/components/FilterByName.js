@@ -1,9 +1,12 @@
-import '../styles/layout/_filterByName.scss';
+import '../styles/layout/_filter.scss';
 const FilterByName= (props)=>{
     return (
         <>
-        <label htmlFor="name" className="filter_name">Busca tu personaje favorito</label>
-        <input type="text" name="name" value={props.searchName} onChange={props.handleSeachName} />
+        <section className="section_filter_name">
+        <label htmlFor="name" className="filter_label">Buscar por el nombre : </label>
+        <input type="text" name="name"
+        className="filter_input" value={props.searchName} onChange={props.handleSeachName} />
+        </section>
         </>
     )
 }

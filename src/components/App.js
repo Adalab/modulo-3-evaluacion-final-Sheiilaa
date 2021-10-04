@@ -55,8 +55,12 @@ function App() {
 
       <Route exact patch='/' >
         <Header />
-        <main>
-
+        <main className="main">
+          <section className="main_section">
+            <p >
+              Bienvenidos a la web de Rick and Morty, en esta web podréis filtrar vuestros personajes además de conocer toda su información.
+            </p>
+            </section>
         <form onSubmit={handleForm}>
         <FilterByName searchName={searchName}  handleSeachName={handleSeachName}/>
         <FilterBySpecies searchSpices={searchSpices} handleSearchSpecies={handleSearchSpecies} />
