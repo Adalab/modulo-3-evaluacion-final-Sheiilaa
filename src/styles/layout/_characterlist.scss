@@ -1,0 +1,26 @@
+.character_li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+  width: 50vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border: #72f522 5px dotted;
+}
+.li_img {
+  width: 35vw;
+  height: 20vh;
+}
+.li_name {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #148f7a;
+  font-size: 18px;
+}
+.li_specie {
+  font-family: "Gemunu Libre", sans-serif;
+  color: #17a665;
+  font-size: 16px;
+}

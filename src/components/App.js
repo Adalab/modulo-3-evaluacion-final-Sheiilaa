@@ -55,7 +55,7 @@ function App() {
 
       <Route exact patch='/' >
         <Header />
-        <main className="main">
+        <main>
           <section className="main_section">
             <p >
               Bienvenidos a la web de Rick and Morty, en esta web podréis filtrar vuestros personajes además de conocer toda su información.

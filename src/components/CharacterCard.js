@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../styles/layout/_characterlist.scss'
 
 const CharacterCard = (props) => {
     return (

@@ -1,6 +1,8 @@
 body {
-  background-image: url(../../images/rick4.jpeg);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, black, blue 150%);
+  background-size: contain;
+  background-origin: border-box;
 }
 @keyframes title {
   0% {
