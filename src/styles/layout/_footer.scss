@@ -1,6 +1,20 @@
 .footer {
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: #148f7a 2px solid;
+}
+.text {
+  font-size: 13px;
+  font-family: "Gemunu Libre", sans-serif;
+  color: #25c44f;
+  padding-bottom: 5px;
 }
 .footer_img {
-  width: 50px;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
 }
