@@ -2,15 +2,18 @@ import { useEffect, useState } from 'react';
 import { Route, Switch, useRouteMatch } from 'react-router-dom';
 import callToApi from './services/api';
 import '../styles/App.scss';
-import title from '../images/Rick_and_Morty_-_logo_(English).png';
+
 import CharacterList from './CharacterList';
-import Filter from './Filter';
+import FilterByName from './FilterByName';
 import PageNotFound from './PageNotFound';
 import CharacterDetail from './CharacterDetail';
-
+import Header from './Header';
+import Footer from './Footer';
+import FilterBySpecies from './FilterBySpecies';
 function App() {
   const [ characters, setCharacters]=useState ([]);
   const [ searchName, setSearchName]= useState('')
+  const [ searchSpices, setSearchSpecies]= useState ('all');
 
   useEffect(()=>{
     callToApi().then((response)=>{
@@ -21,13 +24,18 @@ function App() {
   const handleSeachName=(ev)=>{
     setSearchName(ev.currentTarget.value);
   };
+  const handleSearchSpecies= (ev)=>{
+    setSearchSpecies(ev.currentTarget.value);
+  };
   //Haremos un funcion para el formulario 
   const handleForm=(event)=>{
     event.preventDefault();
   };
  
   const filterCharacter = characters.filter((character)=>
-  character.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())); 
+  character.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())
+  )
+  .filter( (chacacters) => searchSpices === 'all' || searchSpices ===characters.species);
 
     const routeData =useRouteMatch ('/character/:id');
     const characterId= (routeData !== null) ? routeData.params.id : '';
@@ -46,17 +54,17 @@ function App() {
       </Route>
 
       <Route exact patch='/' >
-     <header className="header">
-      <img src={title} alt="rick and morty" className="header_title" />
-      <form onSubmit={handleForm}>
-        <Filter searchName={searchName}  handleSeachName={handleSeachName}/>
+        <Header />
+        <main>
+
+        <form onSubmit={handleForm}>
+        <FilterByName searchName={searchName}  handleSeachName={handleSeachName}/>
+        <FilterBySpecies searchSpices={searchSpices} handleSearchSpecies={handleSearchSpecies} />
       
       </form>
-     </header>
-      <main>
-         <CharacterList data={filterCharacter}/> 
-        
+        <CharacterList data={filterCharacter} searchName={searchName}/>  
       </main>
+      < Footer />
       </Route>
 
       

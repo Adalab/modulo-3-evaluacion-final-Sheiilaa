@@ -1,4 +1,4 @@
-const Filter= (props)=>{
+const FilterByName= (props)=>{
     return (
         <>
 <label htmlFor="name">Busca tu personaje favorito</label>
@@ -6,4 +6,4 @@ const Filter= (props)=>{
         </>
     )
 }
-export default Filter;
+export default FilterByName;

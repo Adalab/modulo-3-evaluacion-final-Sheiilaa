@@ -7,7 +7,17 @@ import CharacterCard from './CharacterCard'
                 <CharacterCard character ={character} />
                </li>
         ));
-        return  <ul className="ul">{eachCharacter}</ul>
+        return (
+            <section className="character_list">
+                {props.data.lenght !==0 ? (
+                    <ul className="ul">{eachCharacter}</ul>
+                ) : (
+                    <p className="character_list_error"> Lo siento, no existe este personaje</p>
+                )}
+            
+            </section>
+
+        ) 
         
  
 };
