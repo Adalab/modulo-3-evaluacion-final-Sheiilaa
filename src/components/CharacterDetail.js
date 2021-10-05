@@ -2,6 +2,14 @@ import { Link } from "react-router-dom";
  import '../styles/layout/_characterDetails.scss'
 
 const CharacterDetail=(props)=>{
+    if(props.character=== undefined){
+        return(
+            <section>
+                <p>PAGINA NO ENCONTRADA</p>
+            </section>
+        )
+
+    }else{
         
     return(
         <>
@@ -26,6 +34,6 @@ const CharacterDetail=(props)=>{
         </section>
         </>
     );
-    
+} 
 }
 export default CharacterDetail;

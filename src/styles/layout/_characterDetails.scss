@@ -2,27 +2,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  justify-content: center;
   margin: auto;
   margin-bottom: 10px;
-  margin-top: 15px;
+  margin-top: 100px;
   height: 100%;
-  padding-top: 20px;
   width: 80vw;
   height: 80vh;
-  border: #aee6e3 5px dotted;
+
   @media (min-width: 768px) {
     margin-bottom: 20px;
     margin-top: 25px;
-
     padding-top: 60px;
     width: 90vw;
-
-    border: #aee6e3 8px dotted;
   }
 }
 .container {
   text-decoration: none;
-  background-color: #24db1f;
+  background-color: #ddd234;
   width: 100px;
   height: 25px;
   border-radius: 40%;
@@ -51,28 +49,32 @@
   text-align: center;
 }
 .details_img {
-  width: 70vw;
-  height: 45vh;
-  margin-bottom: 40px;
+  height: 30vw;
+  margin-bottom: 20px;
 }
 .li_name-details {
   font-family: "Gemunu Libre", sans-serif;
   font-weight: 800;
   text-align: center;
-  color: #73a720;
+  color: #20a737;
+  margin-bottom: 15px;
   @media (min-width: 768px) {
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 }
 .ul_details {
-  width: 65vw;
-  height: 20vh;
-  background-color: #72f522;
+  width: 45vw;
+
+  background-color: #ddd234;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   @media (min-width: 768px) {
-    padding-top: 15px;
     width: 40vw;
-    height: 13vh;
+  }
+  @media (min-width: 1200px) {
+    width: 650px;
   }
 }
 .list_details {
@@ -83,7 +85,7 @@
   text-align: center;
   font-size: 13px;
   @media (min-width: 768px) {
-    font-size: 30px;
+    font-size: 16px;
   }
 }
 .title {
@@ -92,6 +94,6 @@
   color: #074b40;
   font-size: 15px;
   @media (min-width: 768px) {
-    font-size: 33px;
+    font-size: 18px;
   }
 }

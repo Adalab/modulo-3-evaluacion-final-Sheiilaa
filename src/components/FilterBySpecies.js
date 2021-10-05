@@ -8,8 +8,7 @@ const FilterBySpecies =(props)=>{
             <option value="all">Todos</option>
             <option value="Human">Humano</option>
             <option value="Alien">Alien</option>
-            <option value="Robot">Robot</option>
-            <option value="Humanoid">Humanoide</option>
+            
 
         </select>
         </section>

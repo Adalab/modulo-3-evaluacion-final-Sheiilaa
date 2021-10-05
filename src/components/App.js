@@ -35,7 +35,16 @@ function App() {
   const filterCharacter = characters.filter((character)=>
   character.name.toLocaleLowerCase().includes(searchName.toLocaleLowerCase())
   )
-  .filter( (chacacters) => searchSpices === 'all' || searchSpices ===characters.species);
+  .filter( (characters) => searchSpices === 'all' || searchSpices ===characters.species)
+  .sort((a,b)=>{
+    if(a.name > b.name){
+      return 1;
+    } else if (a.name< b.name){
+      return -1
+    } else{
+      return 0
+    }
+  });
 
     const routeData =useRouteMatch ('/character/:id');
     const characterId= (routeData !== null) ? routeData.params.id : '';
