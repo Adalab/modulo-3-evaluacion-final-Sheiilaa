@@ -25,8 +25,11 @@ Once finished the mandatory part I proposed to make some bonuses, among them are
 # Evaluacion final React.
 
 En este proyecto se les muestra la evaluación final del modulo 3 de Adalab, el cual está hecho con React.
+
 En este caso se nos proporcionaba una API y se nos pedía que mostráramos en pantalla **los 20 primeros personajes, De estos personajes que debería mostrar la imagen, el nombre y la especie.**
+
 Además de esto, también se nos pedía que los usuarios pudieran **filtrar por el nombre**, y que diera igual si el usuario escribiera ese nombre en mayúsculas o minúsculas, de ambas formas deberían salir los resultados.
+
 Para finalizar la parte obligatoria, tuvimos que realizar una **ventanilla modal** donde se mostrarán mas datos del personaje en caso de que el usuario hiciese "click" en el.
 Decidí dividir el proyecto en **componente para así poder hacer uso de las props y el lifting**, además de que con ello conseguí un código mas limpio y mejor estructurado.
 Una vez terminada la parte obligatoria me propuse hacer algunos bonus, entre ellos están:
